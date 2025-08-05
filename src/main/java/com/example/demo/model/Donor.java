@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Data
 public class Donor {
-    private Integer id;
-    private String email;
-    private String fullName;
+  private Integer id;
+  private String email;
+  private String fullName;
 }
