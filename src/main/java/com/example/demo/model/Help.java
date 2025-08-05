@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class Help {
-    private Integer id;
-    private Donor beneficiary;
-    private Payment payment;
-    private String accidentDescription;
+  private Integer id;
+  private Donor beneficiary;
+  private Payment payment;
+  private String accidentDescription;
 }

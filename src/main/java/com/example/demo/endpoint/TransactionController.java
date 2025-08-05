@@ -2,14 +2,13 @@ package com.example.demo.endpoint;
 
 import com.example.demo.model.*;
 import com.example.demo.service.TransactionService;
+import java.sql.SQLException;
 import lombok.AllArgsConstructor;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.sql.SQLException;
 
 @RestController
 @AllArgsConstructor
@@ -30,10 +29,10 @@ public class TransactionController {
 
   @PostMapping("/donate")
   public String processDonation(
-          @RequestParam String email,
-          @RequestParam String fullName,
-          @RequestParam double amount,
-          @RequestParam PaymentMethodes paymentMethod) {
+      @RequestParam String email,
+      @RequestParam String fullName,
+      @RequestParam double amount,
+      @RequestParam PaymentMethodes paymentMethod) {
 
     try {
       service.processDonation(email, fullName, amount, paymentMethod);
