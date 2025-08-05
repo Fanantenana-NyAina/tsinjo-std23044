@@ -35,7 +35,7 @@ public class TransactionService {
         repository.saveDonation(Donation.builder().donor(donor).payment(payment).build());
 
     // Vérification asynchrone avec Vola
-    volaService.verifyPaymentAsync(payment.getId(), email, method.name());
+    //volaService.verifyPaymentAsync(payment.getId(), email, method.name());
 
     return donation;
   }
