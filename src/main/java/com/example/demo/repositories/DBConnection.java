@@ -1,9 +1,12 @@
-package com.example.demo.dao;
+package com.example.demo.repositories;
+
+import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@Component
 public class DBConnection {
   private final String host = System.getenv("DB_HOST");
   private final int port = 5432;

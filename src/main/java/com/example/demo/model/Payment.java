@@ -15,4 +15,5 @@ public class Payment {
   private LocalDateTime payementDate;
   private Double amount;
   private PaymentMethodes paymentMethodes;
+  private PaymentStatus paymentStatus;
 }
