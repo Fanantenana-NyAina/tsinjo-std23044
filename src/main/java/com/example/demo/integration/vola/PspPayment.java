@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class PspPayment {
-  private VolaPaymentResponse.PspType pspType;
+  private VolaPaymentResponse pspType;
   private String id;
   private Integer amount;
   private Instant creationInstant;
